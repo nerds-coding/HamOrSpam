@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ham Spam</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icons/favicon.ico')}}" />
+	<!--===============================================================================================-->
+
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+
+	<!-- Main CSS-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/util.css')}}">
+
+
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+
+	<div class="bg-contact100" style="background-image:url({{'images/bg-01.jpg'}});">
+		<div class="container-contact100">
+			<div class="wrap-contact100">
+				<div class="contact100-pic js-tilt" data-tilt>
+					<a href="https://github.com/nerds-coding">
+						<img src="{{url_for('static',filename ='images/github.jpg')}}" alt="IMG">
+					</a>
+				</div>
+
+				<form class="contact100-form validate-form" method="POST" action="{{url_for('prediction')}}">
+					<span class="contact100-form-title">
+						Ham Or Spam
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Name is required">
+						<h3 style="color:white;">{{Hello}}</h3>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Message is required">
+						<textarea class="input100" name="message" placeholder="Message  (100 Letters Only)"></textarea>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-contact100-form-btn">
+						<button class="contact100-form-btn" type="submit" name="inter">Predict</button>
+					</div>
+				</form>
+
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
