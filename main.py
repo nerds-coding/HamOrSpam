@@ -36,7 +36,7 @@ def jsonFile():
         req = request.get_json()
         msg = req.get("message")
 
-        if(not req):
+        if(req!=None):
             response = {
                 "prediction":" "+ModelPrediction(str(msg))
             }
