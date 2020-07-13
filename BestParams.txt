@@ -1,0 +1,4 @@
+RF:{'Best Params': {'n_estimators': 435, 'min_samples_split': 3, 'min_samples_leaf': 9, 'max_depth': 9, 'criterion': 'entropy'}, 'Best Score': 0.9484974093264247, 'Mean Score': 0.9359170984455958}
+svc:{'Best Params': {'kernel': 'rbf', 'gamma': 0.007300000000000001, 'degree': 3.0, 'C': 45.0}, 'Best Score': 0.9678756476683938, 'Mean Score': 0.884663212435233}
+log:{'Best Params': {'C': 0.9}, 'Best Score': 0.946839378238342, 'Mean Score': 0.9383995394358089}
+DT:{'Best Params': {'min_samples_split': 3, 'min_samples_leaf': 3, 'max_depth': 7, 'criterion': 'entropy'}, 'Best Score': 0.9221761658031088, 'Mean Score': 0.8599481865284975}
